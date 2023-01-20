@@ -14,24 +14,41 @@ import SwiftUI
 
 struct MemorizeView: View {
     var body: some View {
-        NavigationLink("Welcome to the\nMemorize Game") {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
-            }
-            .padding()
+        VStack {
+            NavigationLink("Concentration Game") { GameA() }
+                .padding()
+            NavigationLink("Memorize Game") { GameB() }
+                .navigationTitle("Memorize")
         }
-        .navigationTitle("Memorize")
+    }
+}
+
+struct GameA: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe.europe.africa")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+        }
+    }
+}
+
+struct GameB: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "moon.stars")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, space!")
+            
+        }
     }
 }
 
 
-
 struct MemorizeView_Previews: PreviewProvider {
     static var previews: some View {
-        
         NavigationView {
             MemorizeView()
         }
