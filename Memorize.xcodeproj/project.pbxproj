@@ -76,6 +76,8 @@
 		984E6CF2297A944B008EDB97 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				988805DA297A881D000E2338 /* Assets.xcassets */,
+				988805DC297A881D000E2338 /* Preview Content */,
 				984E6CF3297A9472008EDB97 /* Launch Screen.storyboard */,
 			);
 			path = Utils;
@@ -107,8 +109,6 @@
 				984E6CF2297A944B008EDB97 /* Utils */,
 				988805D6297A881B000E2338 /* MemorizeApp.swift */,
 				988805D8297A881B000E2338 /* ContentView.swift */,
-				988805DA297A881D000E2338 /* Assets.xcassets */,
-				988805DC297A881D000E2338 /* Preview Content */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -458,7 +458,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
