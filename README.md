@@ -17,5 +17,5 @@ Techniques implemented include:
 ## Resources
 
 [Stanford CS193p website](https://cs193p.sites.stanford.edu/)
-[Docs]()
+[Docs](https://github.com/emwalks/Memorize/tree/main/Docs)
 
