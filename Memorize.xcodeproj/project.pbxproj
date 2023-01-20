@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		984E6CF4297A9472008EDB97 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984E6CF3297A9472008EDB97 /* Launch Screen.storyboard */; };
 		988805D7297A881B000E2338 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805D6297A881B000E2338 /* MemorizeApp.swift */; };
-		988805D9297A881B000E2338 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805D8297A881B000E2338 /* ContentView.swift */; };
+		988805D9297A881B000E2338 /* MemorizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805D8297A881B000E2338 /* MemorizeView.swift */; };
 		988805DB297A881D000E2338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988805DA297A881D000E2338 /* Assets.xcassets */; };
 		988805DE297A881D000E2338 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988805DD297A881D000E2338 /* Preview Assets.xcassets */; };
 		988805E8297A881E000E2338 /* MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805E7297A881E000E2338 /* MemorizeTests.swift */; };
@@ -36,9 +36,10 @@
 
 /* Begin PBXFileReference section */
 		984E6CF3297A9472008EDB97 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		984E6CF5297ABD45008EDB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		988805D3297A881B000E2338 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988805D6297A881B000E2338 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
-		988805D8297A881B000E2338 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		988805D8297A881B000E2338 /* MemorizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeView.swift; sourceTree = "<group>"; };
 		988805DA297A881D000E2338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		988805DD297A881D000E2338 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		988805E3297A881E000E2338 /* MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,9 +107,10 @@
 		988805D5297A881B000E2338 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
+				984E6CF5297ABD45008EDB97 /* Info.plist */,
 				984E6CF2297A944B008EDB97 /* Utils */,
 				988805D6297A881B000E2338 /* MemorizeApp.swift */,
-				988805D8297A881B000E2338 /* ContentView.swift */,
+				988805D8297A881B000E2338 /* MemorizeView.swift */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -269,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988805D9297A881B000E2338 /* ContentView.swift in Sources */,
+				988805D9297A881B000E2338 /* MemorizeView.swift in Sources */,
 				988805D7297A881B000E2338 /* MemorizeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -411,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,7 +434,7 @@
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Memorize/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
@@ -463,7 +465,7 @@
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Memorize/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";

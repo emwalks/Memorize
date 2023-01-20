@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+// this struct behaves like a View
+// Views can display contents and can receive commands
+// Input and Output of your app
+
+struct MemorizeView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -19,7 +23,19 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+
+
+
+
+
+
+
+
+
+
+
+
+struct MemorizeView_Previews: PreviewProvider {
     static var previews: some View {
         
         let deviceMatrix = [
@@ -29,10 +45,10 @@ struct ContentView_Previews: PreviewProvider {
         ]
         
         ForEach(deviceMatrix, id: \.self) { deviceName in
-            ContentView()
+            MemorizeView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
-            //                .environment(\.sizeCategory, .accessibilityLarge)
+//                .environment(\.sizeCategory, .accessibilityLarge)
         }
     }
 }
