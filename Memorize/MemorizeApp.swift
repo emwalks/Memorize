@@ -11,7 +11,9 @@ import SwiftUI
 struct MemorizeApp: App {
     var body: some Scene {
         WindowGroup {
-            MemorizeView()
+            NavigationView {
+                MemorizeView()
+            }
         }
     }
 }

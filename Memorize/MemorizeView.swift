@@ -14,34 +14,31 @@ import SwiftUI
 
 struct MemorizeView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationLink("Welcome to the\nMemorize Game") {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Hello, world!")
+            }
+            .padding()
         }
-        .padding()
+        .navigationTitle("Memorize")
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
 struct MemorizeView_Previews: PreviewProvider {
     static var previews: some View {
         
+        NavigationView {
+            MemorizeView()
+        }
+        
         let deviceMatrix = [
-//            "iPhone 8",
-//            "iPhone 14 Pro Max",
+            //            "iPhone 8",
+            //            "iPhone 14 Pro Max",
             "iPhone 13 mini"
         ]
         
@@ -49,7 +46,7 @@ struct MemorizeView_Previews: PreviewProvider {
             MemorizeView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
-//                .environment(\.sizeCategory, .accessibilityLarge)
+            //                .environment(\.sizeCategory, .accessibilityLarge)
         }
     }
 }
