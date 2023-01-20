@@ -21,17 +21,16 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-//            ContentView()
-//                .previewDevice("iPhone 8")
-//                .previewDisplayName("iPhone 8")
-//                .environment(\.sizeCategory, .accessibilityLarge)
+        
+        let deviceMatrix = ["iPhone 8",
+                            "iPhone 13 mini",
+                            "iPhone 14 Pro Max"]
+        
+        ForEach(deviceMatrix, id: \.self) { deviceName in
             ContentView()
-                .previewDevice("iPhone 13 mini")
-                .previewDisplayName("iPhone 13 mini")
-//            ContentView()
-//                .previewDevice("iPhone 14 Pro Max")
-//                .previewDisplayName("iPhone 14 Pro Max")
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+//                .environment(\.sizeCategory, .accessibilityLarge)
         }
     }
 }
