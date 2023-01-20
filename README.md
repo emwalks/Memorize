@@ -27,9 +27,9 @@ An updated version of [Concentration](https://github.com/emwalks/Concentration) 
 
 [Docs](https://github.com/emwalks/Memorize/tree/main/Docs)
 
-https://www.hackingwithswift.com/quick-start/swiftui/how-to-preview-your-layout-in-different-devices 
+[Previews on multiple devices - Hacking with Swift](https://www.hackingwithswift.com/quick-start/swiftui/how-to-preview-your-layout-in-different-devices)
 
-https://www.hackingwithswift.com/articles/250/whats-new-in-swiftui-for-ios-16 
+[What's new in SwiftUI iOS 16  - Hacking with Swift ](https://www.hackingwithswift.com/articles/250/whats-new-in-swiftui-for-ios-16 )
 
 [Navigation Stack - Apple Guide](https://developer.apple.com/tutorials/app-dev-training/creating-a-navigation-hierarchy)
 
