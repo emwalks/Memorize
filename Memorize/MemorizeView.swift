@@ -8,8 +8,9 @@
 import SwiftUI
 
 // this struct behaves like a View
-// Views can display contents and can receive commands
+// Views can display contents and can receive user input via multitouch events
 // Input and Output of your app
+// For swift UI the only responsibility of behaving like a view is to include te body property - var body: some View
 
 struct MemorizeView: View {
     var body: some View {
