@@ -19,6 +19,7 @@ struct CardView: View {
             .stroke(lineWidth: 3)
             .foregroundColor(.red)
             Text(model.emojiForCard)
+                .font(.largeTitle)
         }
     }
 }
