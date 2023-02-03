@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MemorizeTravelEditionView: View {
-    var model = TravelModel()
+    var model = TravelViewModel()
     
     var body: some View {
         VStack {
@@ -32,7 +32,7 @@ struct MemorizeTravelEditionView_Previews: PreviewProvider {
     }
 }
 
-class TravelModel {
+class TravelViewModel {
     
     var emojiForCard: String { getEmoji() }
     var theme: Color = .red
