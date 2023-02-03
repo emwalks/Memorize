@@ -18,6 +18,7 @@ struct MemorizeTravelEditionView: View {
                 }
             }
         }
+        .foregroundColor(.red)
         .padding()
     }
 }
