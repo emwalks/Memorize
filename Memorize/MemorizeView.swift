@@ -46,8 +46,8 @@ struct MemorizeView_Previews: PreviewProvider {
         }
         
         let deviceMatrix = [
-//                        "iPhone 8",
-//                        "iPhone 14 Pro Max",
+            "iPhone 8",
+            "iPhone 14 Pro Max",
             "iPhone 13 mini"
         ]
         

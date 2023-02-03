@@ -15,6 +15,9 @@ struct CardView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 18,
                              style: .circular)
+            .foregroundColor(.white)
+            RoundedRectangle(cornerRadius: 18,
+                             style: .circular)
             // stroke on a swiftUI Shape outlines te outside edge
             .stroke(lineWidth: 3)
             .foregroundColor(.red)
