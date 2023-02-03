@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    var model = CardModel()
+    var model = TravelModel()
     
     var body: some View {
         // ZStack builds from device towards user

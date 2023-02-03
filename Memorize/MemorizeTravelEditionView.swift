@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MemorizeCarEditionView: View {
+struct MemorizeTravelEditionView: View {
     var body: some View {
         VStack {
             ForEach(0 ..< 4) { item in
@@ -22,17 +22,17 @@ struct MemorizeCarEditionView: View {
     }
 }
 
-struct MemorizeCarEditionView_Previews: PreviewProvider {
+struct MemorizeTravelEditionView_Previews: PreviewProvider {
     static var previews: some View {
-        MemorizeCarEditionView()
+        MemorizeTravelEditionView()
     }
 }
 
 
-class CardModel: ObservableObject {
+class TravelModel: ObservableObject {
     
     @Published var emojiForCard: String = ""
-    private var arrayOfPossibleEmojis = ["🚗","🚕","🚙","🏎","🚓","🚑","🚜","🚒"]
+    private var arrayOfPossibleEmojis = ["🚗","✈️","⛵️","🚁","🚃","🚲","🚀","🚌"]
     
     init() {
         getEmoji()

@@ -15,7 +15,7 @@
 		988805E8297A881E000E2338 /* MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805E7297A881E000E2338 /* MemorizeTests.swift */; };
 		988805F2297A881E000E2338 /* MemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805F1297A881E000E2338 /* MemorizeUITests.swift */; };
 		988805F4297A881E000E2338 /* MemorizeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805F3297A881E000E2338 /* MemorizeUITestsLaunchTests.swift */; };
-		98CA1CAA298D28F5005E37AD /* MemorizeCarEditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA1CA9298D28F5005E37AD /* MemorizeCarEditionView.swift */; };
+		98CA1CAA298D28F5005E37AD /* MemorizeTravelEditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA1CA9298D28F5005E37AD /* MemorizeTravelEditionView.swift */; };
 		98CA1CAC298D297B005E37AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA1CAB298D297B005E37AD /* CardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 		988805ED297A881E000E2338 /* MemorizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		988805F1297A881E000E2338 /* MemorizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeUITests.swift; sourceTree = "<group>"; };
 		988805F3297A881E000E2338 /* MemorizeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		98CA1CA9298D28F5005E37AD /* MemorizeCarEditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeCarEditionView.swift; sourceTree = "<group>"; };
+		98CA1CA9298D28F5005E37AD /* MemorizeTravelEditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeTravelEditionView.swift; sourceTree = "<group>"; };
 		98CA1CAB298D297B005E37AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +115,7 @@
 				984E6CF5297ABD45008EDB97 /* Info.plist */,
 				988805D6297A881B000E2338 /* MemorizeApp.swift */,
 				988805D8297A881B000E2338 /* MemorizeView.swift */,
-				98CA1CA9298D28F5005E37AD /* MemorizeCarEditionView.swift */,
+				98CA1CA9298D28F5005E37AD /* MemorizeTravelEditionView.swift */,
 				98CA1CAB298D297B005E37AD /* CardView.swift */,
 			);
 			path = Memorize;
@@ -277,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98CA1CAA298D28F5005E37AD /* MemorizeCarEditionView.swift in Sources */,
+				98CA1CAA298D28F5005E37AD /* MemorizeTravelEditionView.swift in Sources */,
 				988805D9297A881B000E2338 /* MemorizeView.swift in Sources */,
 				98CA1CAC298D297B005E37AD /* CardView.swift in Sources */,
 				988805D7297A881B000E2338 /* MemorizeApp.swift in Sources */,
