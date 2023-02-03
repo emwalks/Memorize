@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct MemorizeTravelEditionView: View {
-    var model = TravelViewModel()
+    var viewModel = TravelViewModel()
     
     var body: some View {
         VStack {
             ForEach(0 ..< 4) { item in
                 HStack {
                     ForEach(0 ..< 4) { item in
-                        CardView(content: model.emojiForCard)
+                        CardView(content: viewModel.emojiForCard)
                     }
                 }
                 .ignoresSafeArea()
             }
         }
-        .foregroundColor(model.theme)
+        .foregroundColor(viewModel.theme)
         .padding()
     }
 }
