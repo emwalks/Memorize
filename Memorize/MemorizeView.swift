@@ -16,8 +16,9 @@ struct MemorizeView: View {
     var body: some View {
         VStack {
             NavigationLink("Concentration Game") { GameA() }
-                .padding()
+                .padding(.all)
             NavigationLink("Memorize Game") { GameB() }
+                .padding(.all)
                 .navigationTitle("Game Emporium")
         }
     }
@@ -30,6 +31,7 @@ struct GameA: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+                .padding(.all)
         }
     }
 }
@@ -41,6 +43,7 @@ struct GameB: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, space!")
+                .padding(.all)
             
         }
     }
