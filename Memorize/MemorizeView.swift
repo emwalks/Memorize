@@ -18,7 +18,7 @@ struct MemorizeView: View {
             NavigationLink("Concentration Game") { GameA() }
                 .padding()
             NavigationLink("Memorize Game") { GameB() }
-                .navigationTitle("Memorize")
+                .navigationTitle("Game Emporium")
         }
     }
 }
@@ -54,8 +54,8 @@ struct MemorizeView_Previews: PreviewProvider {
         }
         
         let deviceMatrix = [
-            //            "iPhone 8",
-            //            "iPhone 14 Pro Max",
+//                        "iPhone 8",
+//                        "iPhone 14 Pro Max",
             "iPhone 13 mini"
         ]
         

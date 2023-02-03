@@ -19,7 +19,8 @@ An updated version of [Concentration](https://github.com/emwalks/Concentration) 
 
 ### Techniques implemented:
 
-- 
+- Navigation Stack introduced iOS 16
+- Preview a matrix of devices 
 
 ## Resources
 
