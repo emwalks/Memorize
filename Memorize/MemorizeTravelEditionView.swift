@@ -12,17 +12,31 @@ struct MemorizeTravelEditionView: View {
     
     var body: some View {
         VStack {
-            ForEach(0 ..< 4) { item in
-                HStack {
-                    ForEach(0 ..< 4) { item in
-                        CardView(content: viewModel.emojiForCard)
+            VStack {
+                ForEach(0 ..< 4) { item in
+                    HStack {
+                        ForEach(0 ..< 4) { item in
+                            CardView(content: viewModel.emojiForCard)
+                        }
                     }
+                    .ignoresSafeArea()
+                    .foregroundColor(viewModel.theme)
                 }
-                .ignoresSafeArea()
+                CardControls()
             }
+            .padding()
         }
-        .foregroundColor(viewModel.theme)
-        .padding()
+    }
+}
+
+struct CardControls: View {
+    var body: some View {
+        HStack {
+            Button { } label: { Image(systemName: "plus.circle") }.imageScale(.large)
+            Button("Shuffle") { }
+                .font(.title2)
+            Button { } label: { Image(systemName: "minus.circle") }.imageScale(.large)
+        }
     }
 }
 
@@ -34,13 +48,16 @@ struct MemorizeTravelEditionView_Previews: PreviewProvider {
 
 class TravelViewModel {
     
-    var emojiForCard: String { getEmoji() }
     var theme: Color = .red
+    var arrayOfPossibleEmojis = ["🚗","✈️","⛵️","🚁","🚃","🚲","🚀","🚌", "🚗","✈️","⛵️","🚁","🚃","🚲","🚀","🚌"]
     
-    private var arrayOfPossibleEmojis = ["🚗","✈️","⛵️","🚁","🚃","🚲","🚀","🚌"]
-    
+    var emojiForCard: String { getEmoji() }
+  
     private func getEmoji() -> String {
-        guard let emoji = arrayOfPossibleEmojis.randomElement() else { return "" }
-        return emoji
+        var arrayOfEmojis = arrayOfPossibleEmojis.shuffled()
+        let setEmoji = arrayOfEmojis[0]
+        return setEmoji
     }
 }
+
+
