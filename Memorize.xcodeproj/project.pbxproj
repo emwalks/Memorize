@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		984E6CF4297A9472008EDB97 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984E6CF3297A9472008EDB97 /* Launch Screen.storyboard */; };
 		988805D7297A881B000E2338 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805D6297A881B000E2338 /* MemorizeApp.swift */; };
-		988805D9297A881B000E2338 /* GameEmporiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805D8297A881B000E2338 /* GameEmporiumView.swift */; };
+		988805D9297A881B000E2338 /* MemorizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805D8297A881B000E2338 /* MemorizeView.swift */; };
 		988805DB297A881D000E2338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988805DA297A881D000E2338 /* Assets.xcassets */; };
 		988805DE297A881D000E2338 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988805DD297A881D000E2338 /* Preview Assets.xcassets */; };
 		988805E8297A881E000E2338 /* MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805E7297A881E000E2338 /* MemorizeTests.swift */; };
 		988805F2297A881E000E2338 /* MemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805F1297A881E000E2338 /* MemorizeUITests.swift */; };
 		988805F4297A881E000E2338 /* MemorizeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988805F3297A881E000E2338 /* MemorizeUITestsLaunchTests.swift */; };
+		98CA1CAA298D28F5005E37AD /* MemorizeCarEditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA1CA9298D28F5005E37AD /* MemorizeCarEditionView.swift */; };
+		98CA1CAC298D297B005E37AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CA1CAB298D297B005E37AD /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		984E6CF5297ABD45008EDB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		988805D3297A881B000E2338 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988805D6297A881B000E2338 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
-		988805D8297A881B000E2338 /* GameEmporiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEmporiumView.swift; sourceTree = "<group>"; };
+		988805D8297A881B000E2338 /* MemorizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeView.swift; sourceTree = "<group>"; };
 		988805DA297A881D000E2338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		988805DD297A881D000E2338 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		988805E3297A881E000E2338 /* MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,8 @@
 		988805ED297A881E000E2338 /* MemorizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		988805F1297A881E000E2338 /* MemorizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeUITests.swift; sourceTree = "<group>"; };
 		988805F3297A881E000E2338 /* MemorizeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98CA1CA9298D28F5005E37AD /* MemorizeCarEditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeCarEditionView.swift; sourceTree = "<group>"; };
+		98CA1CAB298D297B005E37AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				988805D5297A881B000E2338 /* Memorize */,
+				984E6CF2297A944B008EDB97 /* Utils */,
 				988805E6297A881E000E2338 /* MemorizeTests */,
 				988805F0297A881E000E2338 /* MemorizeUITests */,
 				988805D4297A881B000E2338 /* Products */,
@@ -108,9 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				984E6CF5297ABD45008EDB97 /* Info.plist */,
-				984E6CF2297A944B008EDB97 /* Utils */,
 				988805D6297A881B000E2338 /* MemorizeApp.swift */,
-				988805D8297A881B000E2338 /* GameEmporiumView.swift */,
+				988805D8297A881B000E2338 /* MemorizeView.swift */,
+				98CA1CA9298D28F5005E37AD /* MemorizeCarEditionView.swift */,
+				98CA1CAB298D297B005E37AD /* CardView.swift */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -271,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988805D9297A881B000E2338 /* GameEmporiumView.swift in Sources */,
+				98CA1CAA298D28F5005E37AD /* MemorizeCarEditionView.swift in Sources */,
+				988805D9297A881B000E2338 /* MemorizeView.swift in Sources */,
+				98CA1CAC298D297B005E37AD /* CardView.swift in Sources */,
 				988805D7297A881B000E2338 /* MemorizeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +438,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Utils/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -461,7 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Utils/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Utils/Preview Content\"";
 				DEVELOPMENT_TEAM = Y983APTU2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

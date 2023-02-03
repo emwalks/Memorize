@@ -12,27 +12,15 @@ import SwiftUI
 // Input and Output of your app
 // For swift UI the only responsibility of behaving like a view is to include te body property - var body: some View
 
-struct GameEmporiumView: View {
-    var body: some View {
-        VStack {
-            NavigationLink("Memorize Game") { MemorizeView() }
-                .padding()
-            NavigationLink("Concentration Game") { GameB() }
-            //default padding is useful as it will be platform specific - eg watch etc
-                .padding()
-                .navigationTitle("Game Emporium")
-        }
-    }
-}
-
 struct MemorizeView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe.europe.africa")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-                .padding(.all)
+            NavigationLink("Car Edition") { MemorizeCarEditionView() }
+                .padding()
+            NavigationLink("Halloween Edition") { GameB() }
+            //default padding is useful as it will be platform specific - eg watch etc
+                .padding()
+                .navigationTitle("Memorize")
         }
     }
 }
@@ -54,7 +42,7 @@ struct GameB: View {
 struct MemorizeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            GameEmporiumView()
+            MemorizeView()
         }
         
         let deviceMatrix = [
@@ -64,7 +52,7 @@ struct MemorizeView_Previews: PreviewProvider {
         ]
         
         ForEach(deviceMatrix, id: \.self) { deviceName in
-            GameEmporiumView()
+            MemorizeView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
             //                .environment(\.sizeCategory, .accessibilityLarge)
