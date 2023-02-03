@@ -2,6 +2,8 @@
 
 This repo keeps track of my progress following [Stanford's CS193P course](https://cs193p.sites.stanford.edu/) (resources dated Spring 2021).
 
+Note the Xcode version used in lectures is 12.5, targeting iOS 14.5.  
+
 ## Project 1: Memorize
 
 An updated version of [Concentration](https://github.com/emwalks/Concentration) for  SwiftUI
@@ -19,8 +21,11 @@ An updated version of [Concentration](https://github.com/emwalks/Concentration) 
 
 ### Techniques implemented:
 
+
+- Preview a matrix of devices
 - Navigation Stack introduced iOS 16
-- Preview a matrix of devices 
+- VStack
+ 
 
 ## Resources
 
