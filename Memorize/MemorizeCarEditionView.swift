@@ -10,12 +10,15 @@ import SwiftUI
 struct MemorizeCarEditionView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe.europe.africa")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-                .padding(.all)
+            ForEach(0 ..< 4) { item in
+                HStack {
+                    ForEach(0 ..< 4) { item in
+                        CardView()
+                    }
+                }
+            }
         }
+        .padding()
     }
 }
 

@@ -13,14 +13,13 @@ struct CardView: View {
     var body: some View {
         // ZStack builds from device towards user
         ZStack {
-            RoundedRectangle(cornerRadius: 25,
-                             style: .continuous)
+            RoundedRectangle(cornerRadius: 18,
+                             style: .circular)
             // stroke on a swiftUI Shape outlines te outside edge
             .stroke(lineWidth: 3)
             .foregroundColor(.red)
             Text(model.emojiForCard)
         }
-        .padding(.horizontal)
     }
 }
 

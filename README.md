@@ -25,8 +25,8 @@ An updated version of [Concentration](https://github.com/emwalks/Concentration) 
 - Preview a [matrix of devices](https://www.hackingwithswift.com/quick-start/swiftui/how-to-preview-your-layout-in-different-devices)
 - [Navigation Stack]((https://developer.apple.com/tutorials/app-dev-training/creating-a-navigation-hierarchy)
 ) introduced iOS 16
-- VStack, ZStack
-- SwiftUI Shape - RoundedRectangle with [continuous corner style](https://developer.apple.com/documentation/swiftui/roundedcornerstyle/continuous)
+- HStack, VStack, ZStack
+- SwiftUI Shape - RoundedRectangle with [corner style](https://developer.apple.com/documentation/swiftui/roundedcornerstyle)
 - Using `.stroke()` on a SwiftUI shape to outline the outside edge
 
 ## Resources

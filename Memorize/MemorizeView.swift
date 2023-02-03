@@ -15,9 +15,9 @@ import SwiftUI
 struct MemorizeView: View {
     var body: some View {
         VStack {
-            NavigationLink("Car Edition") { MemorizeCarEditionView() }
+            NavigationLink("🚗 Car Edition") { MemorizeCarEditionView() }
                 .padding()
-            NavigationLink("Halloween Edition") { GameB() }
+            NavigationLink("👻 Halloween Edition") { GameB() }
             //default padding is useful as it will be platform specific - eg watch etc
                 .padding()
                 .navigationTitle("Memorize")
