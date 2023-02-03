@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct MemorizeTravelEditionView: View {
+    var model = TravelModel()
+    
     var body: some View {
         VStack {
             ForEach(0 ..< 4) { item in
                 HStack {
                     ForEach(0 ..< 4) { item in
-                        CardView()
+                        CardView(content: model.emojiForCard)
                     }
                 }
+                .ignoresSafeArea()
             }
         }
-        .foregroundColor(.red)
+        .foregroundColor(model.theme)
         .padding()
     }
 }
@@ -29,20 +32,15 @@ struct MemorizeTravelEditionView_Previews: PreviewProvider {
     }
 }
 
-
-class TravelModel: ObservableObject {
+class TravelModel {
     
-    @Published var emojiForCard: String = ""
+    var emojiForCard: String { getEmoji() }
+    var theme: Color = .red
+    
     private var arrayOfPossibleEmojis = ["🚗","✈️","⛵️","🚁","🚃","🚲","🚀","🚌"]
     
-    init() {
-        getEmoji()
-    }
-    
-    private func getEmoji() {
-        guard let emoji = arrayOfPossibleEmojis.randomElement() else { return }
-        guard let index = arrayOfPossibleEmojis.firstIndex(of: emoji) else { return }
-        arrayOfPossibleEmojis.remove(at: index)
-        self.emojiForCard = emoji
+    private func getEmoji() -> String {
+        guard let emoji = arrayOfPossibleEmojis.randomElement() else { return "" }
+        return emoji
     }
 }

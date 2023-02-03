@@ -7,9 +7,16 @@
 
 import SwiftUI
 
+// SwiftUI Views are immutable!
+// "Cannot assign to property: 'self' is immutable"
+// Once created the view cannot be changed
+// In swiftUI new views are being drawn all the time rather than changing the current one
+
+// The @State var doesn't make the view mutable, it just marks that var to be a pointer in memory -> the pointer value can change but the view doesn't change
+
 struct CardView: View {
-    var model = TravelModel()
-    var isFaceUp: Bool { return true }
+    var content: String
+    @State var isFaceUp: Bool = false
     
     var body: some View {
         // ZStack builds from device towards user
@@ -18,18 +25,21 @@ struct CardView: View {
             if isFaceUp {
                 cardShape.foregroundColor(.white)
                 cardShape.stroke(lineWidth: 3)
-                Text(model.emojiForCard)
+                Text(content)
                     .font(.largeTitle)
             } else {
                 cardShape.fill()
             }
+        }
+        .onTapGesture {
+            isFaceUp = !isFaceUp
         }
     }
 }
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(content: "🇮🇪")
     }
 }
 
